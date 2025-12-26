@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True, style={'input_type':'password'})
+    password = serializers.CharField(write_only=True, min_length=5, style={'input_type':'password'})
     
     class Meta:
         model = User

@@ -16,3 +16,7 @@ body {
 .container{
     flex: 1;
 }
+
+.alertsuccess {
+    background-color: rgb(100, 251, 100);
+}
